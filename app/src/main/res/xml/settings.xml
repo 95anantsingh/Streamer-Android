@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:cursorVisible="true"
+        android:defaultValue="@string/pref_default_ip"
+        android:editable="true"
+        android:hapticFeedbackEnabled="true"
+        android:hint="@string/pref_hint_ip"
+        android:icon="@drawable/ic_ip_address"
+        android:digits="0123456789."
+        android:inputType="number|numberDecimal"
+        android:key="ip_address"
+        android:singleLine="true"
+        android:summary="@string/pref_default_ip"
+        android:textColorHint="@color/color_hint"
+        android:title="@string/pref_title_ip" />
+
+    <EditTextPreference
+        android:cursorVisible="true"
+        android:defaultValue="@string/pref_default_video_port"
+        android:editable="true"
+        android:hapticFeedbackEnabled="true"
+        android:hint="@string/pref_hint_video_port"
+        android:icon="@drawable/ic_video_port"
+        android:inputType="number"
+        android:key="video_port"
+        android:singleLine="true"
+        android:summary="@string/pref_default_video_port"
+        android:textColorHint="@color/color_hint"
+        android:title="@string/pref_title_video_port" />
+
+    <EditTextPreference
+        android:cursorVisible="true"
+        android:defaultValue="@string/pref_default_video_address"
+        android:editable="true"
+        android:hapticFeedbackEnabled="true"
+        android:hint="@string/pref_hint_video_address"
+        android:icon="@drawable/ic_video_address"
+        android:inputType="text"
+        android:key="video_address"
+        android:singleLine="true"
+        android:summary="@string/pref_default_video_address"
+        android:textColorHint="@color/color_hint"
+        android:title="@string/pref_title_video_address" />
+    <SwitchPreference
+        android:icon="@drawable/ic_about"
+        android:key="hide_about_section"
+        android:summaryOff="Visible"
+        android:summaryOn="Hidden"
+        android:title="@string/pref_title_hide_about_section" />
+
+
+</PreferenceScreen>
